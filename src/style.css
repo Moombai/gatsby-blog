@@ -52,12 +52,13 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
+  --color-primary: white;
+  --color-text: white;
   --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
+  --color-heading: #FFAA33;
+  --color-heading-white: white;
   --color-accent: #d1dce5;
+  --color-background:#222;
 }
 
 /* HTML elements */
@@ -79,6 +80,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background: var(--color-background);
 }
 
 footer {
@@ -118,7 +120,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  color: var(--color-heading-white);
 }
 
 h2 {
@@ -236,6 +238,13 @@ a:focus {
   text-decoration: none;
 }
 
+/* Other */
+
+small {
+  color: #fcd37a;
+  font-weight: var(--fontWeight-bold);
+}
+
 /* Custom classes */
 
 .global-wrapper {
@@ -291,6 +300,10 @@ a:focus {
 
 .bio p {
   margin-bottom: var(--spacing-0);
+}
+
+.bio a {
+  color: #989dfa;
 }
 
 .bio-avatar {
